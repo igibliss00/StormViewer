@@ -48,3 +48,4 @@ class DetailViewController: UIViewController {
         present(vc, animated: true)
     }
 }
+
