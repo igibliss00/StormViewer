@@ -17,6 +17,10 @@ class ViewController: UITableViewController {
         title = "Storm View"
         navigationController?.navigationBar.prefersLargeTitles = true
         
+        performSelector(inBackground: #selector(loadImages), with: nil)
+    }
+    
+    @objc func loadImages() {
         let fm = FileManager.default
         let path = Bundle.main.resourcePath!
 
